@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script> -->
+        <title>Concept Mapper</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="raphael.js"></script>
+        <script type="text/javascript" src="concept-mapper.js"></script>
+        <style type="text/css">
+            #canvas_container {
+                width: 500px;
+                height: 500px;
+                border: 1px solid #aaa;
+            }
+            body {
+                border: 0x;
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="toolbox">
+            
+        </div>
+        <div id="canvas_container"></div>
+        <br/>
+        <textarea id="data" rows="5" cols="80"></textarea>
+        <input type="button" value="Save" onClick="return save()"/>
+        <input type="button" value="Load" onClick="return btn_load()"/>
+    </body>
+</html>
+
